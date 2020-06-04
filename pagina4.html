@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="jumbotron1.ico">
+    <title>Rick y Morty</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"></style>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"></style>
+  </head>
+
+  <body>
+  	<!--Barra principal-->
+  	<nav class="navbar navbar-dark bg-dark">
+  		<a class="navbar-brand" href="#">
+    		<img src="img/rick.png" width="30" height="30" class="d-inline-block align-top" loading="lazy"> 
+    		<img src="img/morty.png" width="30" height="30" class="d-inline-block align-top" loading="lazy">
+    		<spam>Rick y Morty</spam>
+    		<a id="episodios" type="button" href="capitulos.html">EPISODIOS</a>
+  		</a>
+	</nav>
+	<!-- ** Fin barra principal **-->
+
+	<!--Titulo y subtitulo-->
+	<div class="jumbotron jumbotron-fluid">
+  		<div class="container">
+    		<h1 class="display-4">Encuentra la información de tu personaje favorito</h1>
+    		<p class="lead">Selecciona la imagen del personaje que desees conocer a fondo.</p>
+    		<img src="img/gif.gif" width="170" height="170" class="d-inline-block align-top" loading="lazy" id="imgJumbotron">
+  		</div>
+	</div>
+	<!-- ** Fin de titulo y subtitulo **-->
+
+	<!--Linea de intersección-->
+	<div class="linea"></div>
+	<!-- ** Fin Linea de intersección **-->
+
+	<!--Formulario Alan Rails-->
+	<div>
+		<form  name="formulario9" id="formulario9" method="POST">
+			<div class="card" style="width: 20rem;">
+	  				<img style="width: 250px; margin-left: auto; margin-right: auto;" src="img/Alan1.png" class="card-img-top">
+	  			<div class="card-body">
+	    			<h5 class="card-title">Alan Rails</h5>
+	    			<input type="hidden" value="10" name="campo9" id="campo9"></input>
+	    			<a class="btn btn-dark" href="#popup8">Conoceme</a>
+	  			</div>
+			</div>
+		</form>
+		<!-- ** Fin formulario Alan Rails **-->
+
+		<!--Formulario Albert Einstein-->
+		<form  name="formulario9" id="formulario9" method="POST">
+			<div class="card" style="width: 20rem;">
+	  				<img style="width: 250px; margin-left: auto; margin-right: auto;" src="img/Albert1.png" class="card-img-top">
+	  			<div class="card-body">
+	    			<h5 class="card-title">Albert Einstein</h5>
+	    			<input type="hidden" value="11" name="campo10" id="campo10"></input>
+	    			<a class="btn btn-dark" href="#popup9">Conoceme</a>
+	  			</div>
+			</div>
+		</form>
+		<!-- ** Fin formulario Albert Einstein **-->
+
+		<!--Formulario Alexander-->
+		<form  name="formulario10" id="formulario10" method="POST">
+			<div class="card" style="width: 20rem;">
+	  				<img style="width: 250px; margin-left: auto; margin-right: auto;" src="img/Alexander1.png" class="card-img-top">
+	  			<div class="card-body">
+	    			<h5 class="card-title">Alexander</h5>
+	    			<input type="hidden" value="12" name="campo11" id="campo11"></input>
+	    			<a class="btn btn-dark" href="#popup10">Conoceme</a>
+	  			</div>
+			</div>
+		</form>
+	</div>
+
+ 	<!--Paginación de imagenes-->
+	<section class="paginacion">
+		<ul>
+			<li><a href="index.html" class="active">1</a></li>
+			<li><a href="pagina2.html">2</a></li>
+			<li><a href="pagina3.html">3</a></li>
+			<li><a href="pagina4.html">4</a></li>
+			<li><a href="pagina5.html">5</a></li>
+			<li><a href="pagina6.html">6</a></li>
+			<li><a href="pagina7.html">7</a></li>
+		</ul>
+	</section>
+	<!-- ** Fin paginación de imagenes **-->
+
+	<!--Popup Alan Rails-->
+	<div class="overlay" id="popup8">
+		<div class="popup">
+			<nav class="navbar navbar-dark bg-dark">
+  				<a class="navbar-brand" href="#">
+    				<img src="img/rick.png" width="30" height="30" class="d-inline-block align-top" loading="lazy"> 
+    				<img src="img/morty.png" width="30" height="30" class="d-inline-block align-top" loading="lazy">
+    				<spam>Informate</spam>
+  				</a>
+  				<a href="#" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+			</nav>
+			<div class="contenedor-inputs">
+				<br>
+				<span id="etiquetas">Nombre</span>
+				<input type="text" placeholder="Nombre" id="nameAL">
+				<span id="etiquetas">Estado</span>
+				<input type="text" placeholder="Estado" id="estadoAL">
+				<span id="etiquetas">Especie</span>
+				<input type="text" placeholder="Especie" id="especieAL">
+				<span id="etiquetas">Género</span>
+				<input type="text" placeholder="Género" id="generoAL">
+			</div>
+		</div>
+	</div>
+	<!-- ** Fin de Popup Alan Rails **-->
+
+	<!--Popup Albert Einstein-->
+	<div class="overlay" id="popup9">
+		<div class="popup">
+			<nav class="navbar navbar-dark bg-dark">
+  				<a class="navbar-brand" href="#">
+    				<img src="img/rick.png" width="30" height="30" class="d-inline-block align-top" loading="lazy"> 
+    				<img src="img/morty.png" width="30" height="30" class="d-inline-block align-top" loading="lazy">
+    				<spam>Informate</spam>
+  				</a>
+  				<a href="#" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+			</nav>
+			<div class="contenedor-inputs">
+				<br>
+				<span id="etiquetas">Nombre</span>
+				<input type="text" placeholder="Nombre" id="nameALB">
+				<span id="etiquetas">Estado</span>
+				<input type="text" placeholder="Estado" id="estadoALB">
+				<span id="etiquetas">Especie</span>
+				<input type="text" placeholder="Especie" id="especieALB">
+				<span id="etiquetas">Género</span>
+				<input type="text" placeholder="Género" id="generoALB">
+				<span id="etiquetas">Origen</span>
+				<input type="text" placeholder="Origen" id="origenALB">
+			</div>
+		</div>
+	</div>
+	<!-- ** Fin de Popup Albert Einsteink **-->
+
+	<!--Popup Alexander-->
+	<div class="overlay" id="popup10">
+		<div class="popup">
+			<nav class="navbar navbar-dark bg-dark">
+  				<a class="navbar-brand" href="#">
+    				<img src="img/rick.png" width="30" height="30" class="d-inline-block align-top" loading="lazy"> 
+    				<img src="img/morty.png" width="30" height="30" class="d-inline-block align-top" loading="lazy">
+    				<spam>Informate</spam>
+  				</a>
+  				<a href="#" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+			</nav>
+			<div class="contenedor-inputs">
+				<br>
+				<span id="etiquetas">Nombre</span>
+				<input type="text" placeholder="Nombre" id="nameAX">
+				<span id="etiquetas">Estado</span>
+				<input type="text" placeholder="Estado" id="estadoAX">
+				<span id="etiquetas">Especie</span>
+				<input type="text" placeholder="Especie" id="especieAX">
+				<span id="etiquetas">Género</span>
+				<input type="text" placeholder="Género" id="generoAX">
+				<span id="etiquetas">Origen</span>
+				<input type="text" placeholder="Origen" id="origenAX">
+			</div>
+		</div>
+	</div>
+	<!-- ** Fin de Popup Alexander **-->
+
+</body>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script type="text/javascript" src="js/ajax.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</html>

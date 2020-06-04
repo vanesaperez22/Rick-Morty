@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="jumbotron1.ico">
+    <title>Rick y Morty</title>    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"></style>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"></style>	
+  </head>
+
+  <body>
+    <!--Barra principal-->
+  	<nav class="navbar navbar-dark bg-dark">
+  		<a class="navbar-brand" href="#">
+    		<img src="img/rick.png" width="30" height="30" class="d-inline-block align-top" loading="lazy"> 
+    		<img src="img/morty.png" width="30" height="30" class="d-inline-block align-top" loading="lazy">
+    		<spam>Rick y Morty</spam>
+    		<a id="episodios" type="button" href="capitulos.html">EPISODIOS</a>
+  		</a>
+	</nav>
+	<!-- ** Fin barra principal **-->
+
+	<!--Titulo y subtitulo-->
+	<div class="jumbotron jumbotron-fluid">
+  		<div class="container">
+    		<h1 class="display-4">Encuentra la información de tu personaje favorito</h1>
+    		<p class="lead">Selecciona la imagen del personaje que desees conocer a fondo.</p>
+    		<img src="img/gif.gif" width="250" height="180" class="d-inline-block align-top" loading="lazy" id="imgJumbotron">
+  		</div>
+	</div>
+	<!-- ** Fin de titulo y subtitulo **-->
+
+	<!--Linea de intersección-->
+	<div class="linea"></div>
+	<!-- ** Fin Linea de intersección **-->
+
+	<!--Formulario Rick Sanchez-->
+	<div>
+		<form  name="formulario" id="formulario" method="POST">
+			<div class="card" style="width: 20rem;">
+	  				<img src="img/Rick1.png" class="card-img-top">
+	  			<div class="card-body">
+	    			<h5 id="rick" class="card-title">Rick Sanchez</h5>
+	    			<input type="hidden" value="1" name="campo" id="campo"></input>
+	    			<a class="btn btn-dark" href="#popup1">Conoceme</a>
+	  			</div>
+	  		</div>
+	  	</form>
+	  	<!-- ** Fin formulario Rick Sanchez **-->
+	
+		<!--Formulario Morty Smith-->
+	  	<form  name="formulario1" id="formulario1" method="POST">
+			<div class="card" style="width: 20rem;">
+	  				<img src="img/Morty1.png" class="card-img-top">
+	  			<div class="card-body">
+	    			<h5 class="card-title">Morty Smith</h5>
+	    			<input type="hidden" value="2" name="campo1" id="campo1"></input>
+	    			<a class="btn btn-dark" href="#popup2">Conoceme</a>
+	  			</div>
+			</div>
+		</form>
+		<!-- ** Fin formulario Morty Smith **-->
+
+		<!--Formulario Summer Smith-->
+		<form  name="formulario2" id="formulario2" method="POST">
+			<div class="card" style="width: 20rem;">
+	  				<img style="width: 250px; margin-left: auto; margin-right: auto;" src="img/Summer1.png" class="card-img-top">
+	  			<div class="card-body">
+	    			<h5 class="card-title">Summer Smith</h5>
+	    			<input type="hidden" value="3" name="campo2" id="campo2"></input>
+	    			<a class="btn btn-dark" href="#popup3">Conoceme</a>
+	  			</div>
+			</div>
+		</form>
+	</div>
+	<!-- ** Fin formulario Summer Smith **-->
+
+	<!--Paginación de imagenes-->
+	<section id="paginacion" class="paginacion">
+		<ul>
+			<li><a href="index.html" class="active">1</a></li>
+			<li><a href="pagina2.html">2</a></li>
+			<li><a href="pagina3.html">3</a></li>
+			<li><a href="pagina4.html">4</a></li>
+			<li><a href="pagina5.html">5</a></li>
+			<li><a href="pagina6.html">6</a></li>
+			<li><a href="pagina7.html">7</a></li>
+		</ul>
+	</section>
+	<!-- ** Fin paginación de imagenes **-->
+
+	<!--Popup Rick Sanchez-->
+	<div class="overlay" id="popup1">
+		<div class="popup">
+			<nav class="navbar navbar-dark bg-dark">
+  				<a class="navbar-brand" href="#">
+    				<img src="img/rick.png" width="30" height="30" class="d-inline-block align-top" loading="lazy"> 
+    				<img src="img/morty.png" width="30" height="30" class="d-inline-block align-top" loading="lazy">
+    				<spam>Informate</spam>
+  				</a>
+  				<a href="#" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+			</nav>
+			<div class="contenedor-inputs">
+				<br>
+				<span id="etiquetas">Nombre</span>
+				<input type="text" placeholder="Nombre" id="name">
+				<span id="etiquetas">Estado</span>
+				<input type="text" placeholder="Estado" id="estado">
+				<span id="etiquetas">Especie</span>
+				<input type="text" placeholder="Especie" id="especie">
+				<span id="etiquetas">Género</span>
+				<input type="text" placeholder="Género" id="genero">
+				<span id="etiquetas">Origen</span>
+				<input type="text" placeholder="Origen" id="origen">
+			</div>
+		</div>
+	</div>
+	<!-- ** Fin de Popup Rick Sanchez **-->
+
+	<!--Popup Morty Smith-->
+	<div class="overlay" id="popup2">
+		<div class="popup">
+			<nav class="navbar navbar-dark bg-dark">
+  				<a class="navbar-brand" href="#">
+    				<img src="img/rick.png" width="30" height="30" class="d-inline-block align-top" loading="lazy"> 
+    				<img src="img/morty.png" width="30" height="30" class="d-inline-block align-top" loading="lazy">
+    				<spam>Informate</spam>
+  				</a>
+  				<a href="#" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+			</nav>
+			<div class="contenedor-inputs">
+				<br>
+				<span id="etiquetas">Nombre</span>
+				<input type="text" placeholder="Nombre" id="names">
+				<span id="etiquetas">Estado</span>
+				<input type="text" placeholder="Estado" id="estados">
+				<span id="etiquetas">Especie</span>
+				<input type="text" placeholder="Especie" id="especies">
+				<span id="etiquetas">Género</span>
+				<input type="text" placeholder="Género" id="generos">
+				<span id="etiquetas">Origen</span>
+				<input type="text" placeholder="Origen" id="origens">
+			</div>
+		</div>
+	</div>
+	<!-- ** Fin de Popup Morty Smith **-->
+
+	<!--Popup Summer Smith-->
+	<div class="overlay" id="popup3">
+		<div class="popup">
+			<nav class="navbar navbar-dark bg-dark">
+  				<a class="navbar-brand" href="#">
+    				<img src="img/rick.png" width="30" height="30" class="d-inline-block align-top" loading="lazy"> 
+    				<img src="img/morty.png" width="30" height="30" class="d-inline-block align-top" loading="lazy">
+    				<spam>Informate</spam>
+  				</a>
+  				<a href="#" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+			</nav>
+			<div class="contenedor-inputs">
+				<br>
+				<span id="etiquetas">Nombre</span>
+				<input type="text" placeholder="Nombre" id="namess">
+				<span id="etiquetas">Estado</span>
+				<input type="text" placeholder="Estado" id="estadoss">
+				<span id="etiquetas">Especie</span>
+				<input type="text" placeholder="Especie" id="especiess">
+				<span id="etiquetas">Género</span>
+				<input type="text" placeholder="Género" id="geneross">
+				<span id="etiquetas">Origen</span>
+				<input type="text" placeholder="Origen" id="origenss">
+			</div>
+		</div>
+	</div>
+	<!-- ** Fin de Popup Summer Smith **-->
+
+  </body>
+  	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script type="text/javascript" src="js/ajax.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</html>

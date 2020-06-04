@@ -1,0 +1,58 @@
+/* Diseño de los poputs y lo que permite parte de sus funcionamiento */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h4 {
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 40px;
+
+}
+.popup .btn-cerrar-popup{
+  font-size: 16px;
+  line-height: 16px;
+  display: block;
+  text-align: right;
+  color: #BBBBBB;
+  transition: .3s ease;
+}
+.popup .close .btn-cerrar-popup:hover {
+  color: #06D85F;
+}
+
+.popup .contenedor-inputs input{
+	width: 100%;
+	margin-bottom: 20px;
+	height: 52px;
+	line-height: 52px;
+	font-size: center;
+	border: 1px solid #BBBBBB;
+	text-align: center;
+}
+/* Fin de diseño y funcionamiento de popup */

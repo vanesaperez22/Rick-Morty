@@ -1,0 +1,42 @@
+nav{
+	height: 80px;
+}
+
+th{
+	font-family: 'Bangers', cursive;
+	font-size: 20px;
+} 
+td {
+	font-family: 'Chelsea Market', cursive;
+}
+
+#tabla {
+	background: rgba(255,255,255,0.4)!important;
+	border-radius: 5px;
+}
+
+#boton {
+	font-family: 'Bangers', cursive;
+	font-size: 25px;
+}
+
+#index {
+  border-radius: 5px;
+  padding-right: 50px;
+  text-decoration: none;
+  color: #FFFFFF;
+  margin: 10px;
+  font-size: 23px;
+}
+
+#banner {
+	height: 255px;
+}
+
+#imagenDos {
+	width: 450px;
+	height: 300px;
+	display:block;
+  	margin-left: auto;
+  	margin-right: auto;
+}

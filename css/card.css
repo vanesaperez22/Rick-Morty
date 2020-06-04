@@ -1,0 +1,160 @@
+/* Tarjetas en las cuales se encuentran imagenes y nombre del personaje */
+.card {
+	top: 20px;
+	float: left;
+	margin: 99px;
+	border: #526F82!important;
+	background-color: #526F82;
+	height: 360px!important;
+	text-align: center;
+	font-family: 'Chelsea Market', cursive;
+}
+
+.card-img-top, .card-body {
+	height: 250px;
+	background: rgba(255,255,255,0.2)!important;
+}
+/* Fin de diseño de tarjetas */
+
+/* Responsive de Cards */
+@media screen and (min-width: 1500px) and (max-width: 1553px) {
+	.card{
+		margin: 90px;
+	}
+}
+
+@media screen and (min-width: 1450px) and (max-width: 1499px) {
+	.card{
+		margin: 80px;
+	}
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1449px) {
+	.card{
+		margin: 73px;
+	}
+}
+
+@media screen and (min-width: 1350px) and (max-width: 1399px) {
+	.card{
+		margin: 65px;
+	}
+}
+
+@media screen and (min-width: 1290px) and (max-width: 1349px) {
+	.card{
+		margin: 55px;
+	}
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1289px) {
+	.card{
+		margin: 45px;
+	}
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1249px) {
+	.card{
+		margin: 40px;
+	}
+}
+
+@media screen and (min-width: 1170px) and (max-width: 1199px) {
+	.card{
+		margin: 33px;
+	}
+}
+
+@media screen and (min-width: 1110px) and (max-width: 1169px) {
+	.card{
+		margin: 25px;
+	}
+}
+
+@media screen and (min-width: 1060px) and (max-width: 1109px) {
+	.card{
+		margin: 16px;
+	}
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1059px) {
+	.card{
+        left:10px;
+        margin: 360px;
+        margin-top: 20px!important;
+	}
+}
+
+@media screen and (min-width: 900px) and (max-width: 999px) {
+	.card{
+        left:10px;
+        margin: 310px;
+        margin-top: 20px!important;
+	}
+}
+
+@media screen and (min-width: 800px) and (max-width: 899px) {
+	.card{
+        left:10px;
+        margin: 270px;
+        margin-top: 20px!important;
+	}
+}
+
+@media screen and (min-width: 700px) and (max-width: 799px) {
+	.card{
+        left:10px;
+        margin: 210px;
+        margin-top: 20px!important;
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 699px) {
+	.card{
+        left:10px;
+        margin: 160px;
+        margin-top: 20px!important;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 599px) {
+	.card{
+        left:10px;
+        margin: 110px;
+        margin-top: 20px!important;
+	}
+}
+
+@media screen and (min-width: 400px) and (max-width: 499px) {
+	.card{
+        left:10px;
+        margin: 73px;
+        margin-top: 20px!important;
+	}
+}
+
+@media screen and (min-width: 300px) and (max-width: 399px) {
+	.card{
+        left:10px;
+        margin: 20px;
+        margin-top: 20px!important;
+	}
+}
+
+@media screen and (min-width: 1510px) and (max-width: 1563px) {
+	#formulario15{
+		margin: -65px;
+	}
+}
+
+@media screen and (min-width: 1480px) and (max-width: 1509px) {
+	#formulario16{
+		margin: -90px;
+	}
+}
+
+@media screen and (min-width: 1350px) and (max-width: 1479px) {
+	#formulario16{
+		margin: -150px;
+	}
+}
